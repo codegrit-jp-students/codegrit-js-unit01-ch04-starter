@@ -10,21 +10,16 @@
 <script>
 
 // チャレンジ4の回答を記載！
-function paragraphColor() {
-  const paraColor = document.getElementsByTagTagName('h1');
+function titleColor() {
+  const paraColor = document.getElementsByTagName('h1');
   for (let h1 of paraColor) {
-    h1.classList.add('paragraph'); // クラスを加える
+    h1.classList.add('title'); // クラスを加える
   }
 }
-paragraphColor(); // 関数の呼び出し
+titleColor(); // 関数の呼び出し
 
 function paragraphReset() {
-  const paraColor = document.getElementsByTagName('p');
-  for (let p of paraColor) {
-    p.classList.remove('paragraph'); // クラスをremoveする
-  }
 }
-paragraphReset(); // 関数の呼び出し
 
 </script>
 </body>
