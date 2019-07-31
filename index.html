@@ -13,13 +13,18 @@
 function titleColor() {
   const paraColor = document.getElementsByTagName('h1');
   for (let h1 of paraColor) {
-    h1.classList.add('title'); // クラスを加える
+    h1.classList.add('title'); // クラス名を追加する
   }
 }
 titleColor(); // 関数の呼び出し
 
 function paragraphReset() {
+  const paraColor = document.getElementsByTagName('p');
+  for (let p of paraColor) {
+    p.classList.remove('paragraph'); // クラス名paragraphを削除する
+  }
 }
+paragraphReset(); // 関数の呼び出し
 
 </script>
 </body>
